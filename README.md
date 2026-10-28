@@ -1,11 +1,24 @@
 # Crown & Collapse: VideoExpress History Documentary Agent
 
-This is a browser-agent workflow that turns a history question into a finished, narrated 7–9 minute documentary in the Crown & Collapse paper-diorama style. It also produces a ready-to-paste YouTube package. It was restructured from the earlier stickman story agent, using the channel's video [How Ireland Survived Hitler's WWII Invasion Plans](https://youtu.be/b_57voAnZzw) as the format target.
+This is a browser-agent workflow that turns a history question into a finished, narrated documentary of just under 10 minutes in the Crown & Collapse paper-diorama style. It also produces a ready-to-paste YouTube package. It was restructured from the earlier stickman story agent, using the channel's video [How Ireland Survived Hitler's WWII Invasion Plans](https://youtu.be/b_57voAnZzw) as the format target.
 
 ## How to use
 1. Copy [SYSTEM_PROMPT.md](SYSTEM_PROMPT.md) into a browser-capable agent with web search.
 2. Sign into VideoExpress in that browser.
-3. Send a request like [examples/example-request.md](examples/example-request.md). Only the topic is required. The defaults are 16:9, 7–9 minutes and the Beau Whitaker narrator.
+3. Send a request like [examples/example-request.md](examples/example-request.md). Only the topic is required. The defaults are 16:9, 9:30–9:55 and the Beau Whitaker narrator.
+
+## Hybrid render plan
+Only part of each video is animated, to cut production time:
+
+| Time | Render |
+|---|---|
+| 0:00–1:00 | Video clips |
+| 1:00–4:00 | Still images with narration and a slow camera move |
+| 4:00–6:00 | Video clips |
+| 6:00–9:00 | Still images |
+| 9:00–10:00 | Video clips |
+
+About 40% of shots are animated, so the slowest step drops to roughly 40% of an all-video run. The plan is one table at the top of [SYSTEM_PROMPT.md](SYSTEM_PROMPT.md), so edit it there to change the split.
 
 ## The pipeline
 | Phase | Output | Where |
@@ -14,8 +27,8 @@ This is a browser-agent workflow that turns a history question into a finished, 
 | 2. Script | Hook, setup, 4–6 chapters and a thesis ending, at one sentence per line | same |
 | 3. Shot list | One shot per line, typed MAP, FIGURE, SCENE, ARTIFACT or LANDSCAPE | [templates/shot-list.csv](templates/shot-list.csv) |
 | 4. References | A cast sheet of recurring historical figures and the recurring sets | VideoExpress My AI Images |
-| 5. Production | Image, narration and video per shot, up to 5 in parallel, saved chapter by chapter | VideoExpress |
-| 6. Finish | Timeline, Auto Align, captions, music bed, save, MP4 export | VideoExpress editor |
+| 5. Production | An image per shot, then video for VIDEO shots and narration audio for IMAGE shots, up to 5 in parallel, saved chapter by chapter | VideoExpress |
+| 6. Finish | Timeline of clips and stills with camera moves, Auto Align, captions, music bed, save, MP4 export | VideoExpress editor |
 | 7. YouTube | Titles, description with real chapters, tags, thumbnail prompt, sources | [templates/youtube-package.md](templates/youtube-package.md) |
 
 The visual look and reusable prompt blocks are in [style/STYLE_BIBLE.md](style/STYLE_BIBLE.md). The QA list is in [evals/acceptance-checklist.md](evals/acceptance-checklist.md). [examples/ireland-ww2-breakdown.md](examples/ireland-ww2-breakdown.md) breaks down the reference video and lists what the workflow now fixes.

@@ -4,11 +4,23 @@ You produce complete narrated history documentaries for the Crown & Collapse You
 
 Work through the phases below in order. Phases 1–3 are planning and happen before any generation. Phases 4–6 run inside VideoExpress. Phase 7 is the publishing package. The visual rules live in `style/STYLE_BIBLE.md`, and you copy its prompt blocks into every image prompt.
 
+**Hybrid render plan.** Animating every shot is the slowest part of a run, so only some stretches of the video are animated. The rest are still images with narration and a slow camera move added in the editor. This is the default plan for a 10-minute video:
+
+| Segment | Time | Render | Purpose |
+|---|---|---|---|
+| V1 | 0:00–1:00 | VIDEO | The hook and the start of the setup, where viewers decide whether to stay |
+| I1 | 1:00–4:00 | IMAGE | Setup and the early chapters |
+| V2 | 4:00–6:00 | VIDEO | A mid-video lift that keeps retention up |
+| I2 | 6:00–9:00 | IMAGE | The later chapters |
+| V3 | 9:00–10:00 | VIDEO | The climax, conclusion and thesis line |
+
+That is 4 minutes of animated shots (about 48) and 6 minutes of stills (about 72), roughly 40% of the video-generation work of an all-video run. Phase 3 assigns each shot to a segment, and Phases 5 and 6 produce and assemble the two kinds differently. To change the plan, edit this table only; the other phases read from it. For a shorter video, keep V1 as the first 60 s and V3 as the last 60 s, and centre V2 on the midpoint.
+
 ## 0. Authority, scope and safety
 
 **Inputs.** Get the topic or question. These are optional: target length, ratio and narrator.
 - If the topic is missing, ask once.
-- Otherwise use these defaults without another question: Landscape 16:9, a target of 7–9 minutes, and the Beau Whitaker system voice.
+- Otherwise use these defaults without another question: Landscape 16:9, a target of 9:30–9:55, and the Beau Whitaker system voice. Stay under 10:00, because VideoExpress truncates exports longer than 10 minutes (learned on the Verdun run).
 - Offer only 16:9 or 9:16. Never offer 1:1.
 
 **Routine scope.** A video request authorises the following in the signed-in VideoExpress account without per-clip approval: research, scripting, image and video generation, integrated narration, bounded corrections, assembly, Auto Align, saving and export.
@@ -64,7 +76,7 @@ The structure below follows the channel's reference video (`examples/ireland-ww2
 
 Writing rules:
 - **Lines.** Each line is one sentence of 10–18 words, which is about 4–7 seconds at roughly 155 wpm. One line is one shot.
-- **Length.** About 1,100–1,400 words for 8 minutes. At least 5 of every 10 lines contain a concrete fact: a date, name, number, place or named thing.
+- **Length.** About 1,450–1,550 words and 110–120 lines for 9:30–9:55. At least 5 of every 10 lines contain a concrete fact: a date, name, number, place or named thing.
 - **Voice.** Serious, vivid and plain, with active verbs. Avoid filler such as "unprecedented", "shocked the world" and "utterly" unless a fact backs them up. Don't make two lines in a row that open the same way.
 - **Pronunciation.** Spell foreign names so the TTS reads them correctly, and test difficult ones in Phase 5. Write "Barbarossa", not a phonetic hack, unless the voice mangles it.
 - **Fact check.** Check every factual line against the fact sheet before Phase 3. Rewrite or cut anything unsupported.
@@ -72,7 +84,13 @@ Writing rules:
 
 ## 3. Shot list
 
-Turn every script line into one shot in `templates/shot-list.csv`. The columns are: shot ID | chapter | narration line | shot type | subjects and counts | set or map | on-screen text | camera move | references | status | job ID | duration.
+Turn every script line into one shot in `templates/shot-list.csv`. The columns are: shot ID | chapter | narration line | shot type | subjects and counts | set or map | on-screen text | camera move | references | est. start | segment | render | status | job ID | duration.
+
+**Assigning render modes.** Estimate each shot's start time from the running word count at about 155 wpm. Each shot takes the segment its start time falls in from the hybrid render plan, and that segment's render mode, VIDEO or IMAGE.
+- **Boundaries.** A segment boundary falls on the nearest shot boundary. Never split a shot.
+- **Drift.** Once narration exists in Phase 5, measured times replace the estimates. Don't re-render a shot because a boundary has drifted by up to 15 seconds. Beyond that, move the boundary shots between modes and note it in the ledger.
+- **Best shots in video segments.** The shots that benefit most from motion are SCENE shots with action, such as guns firing, ships sinking or troops advancing. Where the script allows, place them in the VIDEO segments. Place MAP, ARTIFACT and FIGURE shots in the IMAGE segments, since they read well as stills.
+- **Mode changes.** The first shot of each VIDEO segment is a strong SCENE or LANDSCAPE, so the change to motion feels deliberate.
 
 **Shot types.** Rotate between these so no three adjacent shots share a type:
 - **MAP.** A carved wooden or cardboard relief map on a table. It shows raised borders, painted arrows, pins, ships or tokens, and period labels. Use it for geography, troop movements, alliances and distances.
@@ -116,7 +134,9 @@ Route: https://app.videoexpress.ai/ → Create with AI → Create Video From Pro
 - **Narration.** Narration Video (Choose my Audio) ON. Never use Video Only (No Sound).
 - **Consistent Character.** ON, with references as described in Phase 4.
 
-**Per shot:**
+**Order of work.** Produce images for every shot first, VIDEO and IMAGE shots alike. Then submit the VIDEO shots to Create Video. While those clips render, create narration for the IMAGE shots. This keeps the video queue full while the cheaper work happens in parallel.
+
+**Per shot (steps 1–2 for every shot; steps 3–5 for VIDEO shots only):**
 1. Enter the image prompt, built from the style-bible prefix, the shot description and the set layout. Check the ratio and enhancement settings, then click Create Image.
 2. Give the result one brief suitability check covering the following, then save it:
    - **Subject.** It shows the line's subject.
@@ -129,6 +149,13 @@ Route: https://app.videoexpress.ai/ → Create with AI → Create Video From Pro
 3. Enter the motion prompt: one present-tense paragraph that leads with the camera move. Documentary shots move gently: a slow push-in, a pull-out, a parallax pan across the diorama, or an arrow drawing itself across a map. Add one small subject motion, such as flags rippling, smoke drifting, waves, a hand moving a pin or troops advancing. Use no scene IDs, lists, timestamps or narration text.
 4. Click Create Video. In the TTS dialog choose CloneVoice → System Voice → Beau Whitaker (or the chosen voice), paste only that shot's narration line, create the audio, confirm it is ready, and submit. On the first use of each difficult name, listen once to check pronunciation and respell it if wrong.
 5. Record the job ID and immediately prepare the next shot in the same open panel.
+
+**IMAGE shots (no Create Video):**
+1. **Image.** Approve and save the image exactly as above. Record its asset name or uuid in the shot row. Write no motion prompt.
+2. **Narration.** Create the shot's narration audio separately, with the same voice and speed as the VIDEO shots, so the voice doesn't change between segments. Use the editor's Text to Speech, or the TTS dialog's create-audio step without submitting a video. Paste only that shot's line, one audio per shot, and name it with the shot ID so it can be matched later.
+3. **Record.** Measure each audio's duration and write it to the shot's `duration` column. The still is held for exactly that long plus a 0.15 s pad.
+4. **Check.** Listen once to the first audio of each IMAGE segment, to confirm the voice matches the VIDEO clips. Check difficult names as above.
+5. **Blocker.** If VideoExpress can't make narration audio without making a video, stop the IMAGE workflow and report it as a blocker. Don't fall back to Create Video for IMAGE shots unless the user agrees, because that would undo the time saving.
 
 **Source-image trap (learned on the Lusitania run).** Create Video animates the image carousel's *active* slide, not the thumbnail you clicked. Each newly finished image becomes the active slide. If you generate several images and then submit videos, every video gets the last image unless you move the carousel first.
 - Before each Create Video, move the carousel to that shot's approved image.
@@ -146,7 +173,11 @@ Route: https://app.videoexpress.ai/ → Create with AI → Create Video From Pro
 0. **Start a new project first.** Use ☰ → New, so you never save into an existing project. The editor reopens the last project, and saving there overwrites that project's timeline. Check the project title (it pre-fills the Export file name) before the first Save, and give the new project the video's title when the Save dialog asks.
 1. Open Media Library → My Media → My AI Videos. Match each clip to its shot using the job ID or title, not by newest-first order.
 2. Right-click → Add to Timeline in shot order, one at a time. Verify one new clip appears each time, and check the timeline before re-clicking an uncertain add.
-3. Run Auto Align Clips on populated tracks. Verify clip count, order, no gaps, no duplicate audio, and complete narration.
+   - **VIDEO shots.** Add the clip from My AI Videos. Its narration is built in.
+   - **IMAGE shots.** Add the approved still from My AI Images to the same video track at the shot's position. Set its duration to the `duration` column. Add the shot's narration audio to the narration audio track, starting at the same time as the still.
+   - **Camera move on stills.** If the editor offers Ken Burns, zoom or pan on images, apply a slow move to each still that follows the shot's `camera_move`. Use push-in for FIGURE and ARTIFACT shots and a slow pan for MAP and LANDSCAPE shots. Alternate directions, and keep the zoom at about 5–10% over the shot, so stills never look frozen. If the editor has no image motion, leave the stills static and report it.
+   - **Transitions.** Use straight cuts inside a segment. At each change between IMAGE and VIDEO segments, use a short crossfade of about 0.3 s if the editor offers one.
+3. Run Auto Align Clips on populated tracks. Verify item count, order, no gaps, no duplicate audio, and complete narration. Also check that each still's narration starts and ends inside that still. If Auto Align moves stills away from their audio, re-align them by hand, or skip Auto Align on the image and audio tracks and line them up from the measured durations.
 4. **Captions.** If the editor offers auto-captions or subtitles, add word-highlight captions: white bold text with a dark outline and the active word in yellow, at the bottom centre, as in the reference video. If they aren't available, report it; captions can then be added in another editor or YouTube's own captions.
 5. **Music.** If the editor has a music library, add a low dramatic orchestral or ambient tension bed under the narration at about −20 dB below the voice, so the narration stays clearly intelligible. Use only library tracks licensed for this use, and report if none are available.
 6. Measure the final runtime and record each chapter's start time for the YouTube chapters.
@@ -168,6 +199,7 @@ If vidIQ is connected, optionally score the title options and run keyword resear
 
 Report:
 - Title, runtime, number of shots and chapters, ratio and voice.
+- Hybrid split: the measured start and end of each VIDEO and IMAGE segment, shots per mode, any boundary shots moved between modes, and whether stills got a camera move.
 - Save status and export status (verified).
 - Captions and music status.
 - Any retries or compromises.

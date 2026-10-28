@@ -1,6 +1,6 @@
 # Script: [Working title / question]
 
-**Target:** [7–9] min · about [1,100–1,400] words · about [80–95] lines and shots · 16:9 · Beau Whitaker
+**Target:** [9:30–9:55] · about [1,450–1,550] words · about [110–120] lines and shots · 16:9 · Beau Whitaker
 
 ## Fact sheet
 | # | Claim | Date | Source (title + URL) | Confidence |

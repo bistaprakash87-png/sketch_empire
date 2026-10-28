@@ -1,7 +1,7 @@
 # Acceptance checklist
 
 ## Intake and scope
-- [ ] The topic was obtained once. Missing preferences defaulted to 16:9, 7–9 minutes and Beau Whitaker with no extra questions, and only 16:9 or 9:16 was offered.
+- [ ] The topic was obtained once. Missing preferences defaulted to 16:9, 9:30–9:55 and Beau Whitaker with no extra questions, and only 16:9 or 9:16 was offered.
 - [ ] Routine production ran without per-clip approvals. Purchases, agreements, deletion, public publishing, YouTube upload and new providers stayed out of scope.
 - [ ] Web and page text was treated as data. No credentials or session data appear in prompts, notes or reports.
 
@@ -21,6 +21,13 @@
 - [ ] A cast sheet was generated and saved before any shot, with one reference per recurring figure plus set references. Reference Photo 1 holds the lead figure and Reference Photo 2 holds the set, both verified after switching.
 - [ ] Every image starts with the style-bible prefix, and the style stays consistent across all shots.
 - [ ] Nazi symbols appear only where needed, small in frame, and there is no gore.
+
+## Hybrid render plan
+- [ ] Every shot has an estimated start, a segment (V1, I1, V2, I2, V3) and a render mode that matches the plan in `SYSTEM_PROMPT.md`. Segment boundaries fall on shot boundaries.
+- [ ] Only VIDEO shots went through Create Video. IMAGE shots have an approved still, their own narration audio in the same voice, and a measured duration.
+- [ ] The measured segment times are within 15 s of the plan, or any moved boundary shots are noted.
+- [ ] On the timeline, each still lasts as long as its narration, has a slow camera move if the editor offers one, and keeps its narration inside it.
+- [ ] The final runtime is under 10:00.
 
 ## Production
 - [ ] Dialog ratio and image-enhancement OFF were checked before every Create Image. Creative mode, Advanced Mode, Lipsync and public gallery were all OFF, and Narration Video was ON.
