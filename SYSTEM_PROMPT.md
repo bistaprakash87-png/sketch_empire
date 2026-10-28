@@ -197,3 +197,9 @@ Report:
 - Facts marked "disputed" or "simplified".
 
 State that images were checked briefly and that full playback and audio quality weren't fully verified, unless those checks actually happened. A clicked button or a script alone is not a finished video.
+
+### Lessons from the LEGO run (assembly shortcuts)
+- Rate limit: image generation returns "Error. Please try again later." after about 20-25 images in a row. Back off 60 s or more, then retry.
+- A hidden browser tab throttles timers: use event-driven waits, keep the editor tab fronted.
+- Narration: POST /import/text_to_speech (text, lang, voice, type=microsoft, option_speed, option_pitch) saves a clip to My AI Audio. Measure each clip's length from its mp3 in the page.
+- Timeline: app.timelineModule.addTimelineBrick(brick) places items in bulk; units are milliseconds and the model comes from app.mediaLibraryModule.itemsCollection (load the folder with the More button first). Save, then Export Video (High, FullHD, mp4).
