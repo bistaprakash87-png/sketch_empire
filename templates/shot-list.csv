@@ -1,4 +1,3 @@
-shot_id,chapter,year,narration_line,shot_type,subjects_and_counts,set_or_map,on_screen_text,camera_move,ref_photo_1,ref_photo_2,est_start,segment,render,image_status,job_id,duration_s
-S001,Hook,1940,"Hitler conquered most of Europe, but one island remained untouched.",MAP,"relief map of Europe; occupied area in red; Ireland untouched green",War table map,,slow push-in toward Ireland,,War table map,0:00,V1,VIDEO,,,
-S002,Hook,1940,"Here's why Ireland was never invaded.",LANDSCAPE,"Irish sea cliffs; storm clouds",,,slow pull-out,,,0:05,V1,VIDEO,,,
-S013,Setup,1938,"In 1938 Britain handed back the three Treaty Ports it had kept since 1922.",ARTIFACT,"the signed 1938 agreement on a desk; a fountain pen",,1938 AGREEMENT,slow push-in (editor Ken Burns),,,1:01,I1,IMAGE,,,
+shot_id,chapter,year,narration_line,shot_type,subjects_and_counts,set_or_map,on_screen_text,camera_move,ref_photo_1,ref_photo_2,image_status,image_id,audio_id,duration_s
+S001,Hook,1940,"Hitler conquered most of Europe, but one island remained untouched.",MAP,"relief map of Europe; occupied area in red; Ireland untouched green",War table map,,slow push-in toward Ireland,,War table map,,,,
+S002,Hook,1940,"Here's why Ireland was never invaded.",LANDSCAPE,"Irish sea cliffs; storm clouds",,,slow pull-out,,,,,,

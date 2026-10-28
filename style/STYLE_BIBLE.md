@@ -48,10 +48,10 @@ Crowds and soldiers use the same style at smaller scale with simplified faces. A
 **LANDSCAPE.**
 > Atmospheric paper-diorama landscape of [place]: [cliffs/sea/fields/factory], layered depth, [weather/time of day], no people or a tiny lone figure for scale.
 
-## Motion vocabulary
-Use a slow push-in, a slow pull-out, a lateral parallax pan across layers, a gentle tilt down onto a map, an arrow drawing itself, pins dropping, tokens sliding along a route, flags rippling, smoke drifting, waves rolling, or a figure making one small gesture: turning a page, pointing, looking out a window.
+## Camera moves on stills (editor stage)
+Every shot is a still image, so the only motion is the editor's Ken Burns move: a slow push-in, a slow pull-out, a lateral pan across the diorama, or a gentle tilt down onto a map. Keep it to about 5–10% over the shot, alternate directions, and never use one move three times in a row. Avoid fast zooms and whips.
 
-Keep motion calm and readable, with one camera move and one subject motion per shot. Avoid fast whips, orbits and complex choreography.
+To suggest motion inside the still, build it into the image: arrows already drawn across a map, smoke frozen mid-drift, flags caught mid-ripple, a figure caught mid-gesture.
 
 ## Captions (editor stage)
 Word-by-word captions sit at the bottom centre in white bold sans-serif with a black outline, with the spoken word highlighted in yellow, at a maximum of 2 lines.
