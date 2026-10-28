@@ -1,0 +1,498 @@
+{
+"S001": {
+"image": "85670b8b-c5f0-4c20-8f09-0b72c3d33fdb",
+"video": "a25236a2-71b1-487f-9fca-9f6555ec7e7e",
+"audio_s": 6
+},
+"S002": {
+"image": "4d531147-c61e-4736-acc0-9d7d4052813a",
+"video": "a12afd67-afdc-443d-a97e-f632167c8a5d",
+"audio_s": 6
+},
+"S030": {
+"video": "c12e02ed-6af0-4fa2-a7b2-b70b920516ef",
+"audio_s": 6
+},
+"S033": {
+"video": "a437883f-9dd2-4784-a050-9ebc4b4b59bb"
+},
+"S034": {
+"video": "42efef7e-f85b-46fe-910f-a5ba60da4b15",
+"note": "reused 2nd candidate of S033 generation"
+},
+"S037": {
+"video": "92fc0de5-789c-4d55-b47f-ffb9a65acc7b"
+},
+"S041": {
+"video": "69d24186-e57a-4c0f-bf41-e826fc35644a",
+"note": "CC off"
+},
+"S039": {
+"video": "40784cfa-156b-4f59-8086-64eeac680d14"
+},
+"S017": {
+"video": "e4cfb732-98a7-4aa6-8c1f-292c0c51ccab"
+},
+"S018": {
+"video": "cc717958-8c88-4503-b1ce-f6e72dab1564"
+},
+"S023": {
+"video": "832923c0-1f1b-4c6a-9093-abc5438110a5"
+},
+"S024": {
+"video": "47a77be8-3f23-41f2-b5f0-c4b7db68eae6",
+"note": "2nd attempt; 1st had 5 funnels"
+},
+"S104": {
+"video": "11fcccbe-786b-4935-ba3a-7bfa5c8a00a6"
+},
+"S011": {
+"video": "432565f2-253a-4a82-9cae-bde3facf3f9c"
+},
+"S027": {
+"video": "ba28b22f-2b2c-4a43-a2b6-57ca7e81eab4"
+},
+"S085": {
+"video": "7c064882-f074-46b9-a046-9f441fe53a5e"
+},
+"S029": {
+"video": "daed5271-947e-4284-a435-98932974e1ec"
+},
+"S042": {
+"video": "825d8a39-4704-477a-b5d5-a189902a5f95",
+"note": "2nd candidate of S029 generation"
+},
+"S032": {
+"video": "4208fd6b-6d4a-491b-ba70-082226452e81"
+},
+"S028": {
+"video": "7ebdd44a-73af-41d4-bc99-b802a134a15d",
+"note": "2nd candidate of S032 generation"
+},
+"S007": {
+"video": "c429d9ce-7190-436c-a39d-f3ac89ed477f"
+},
+"S014": {
+"video": "184dac3e-4514-4a75-a99e-887ba51d51e7",
+"note": "2nd candidate of S007 gen"
+},
+"S058": {
+"video": "b148d696-0f1e-4649-825e-dd492d40b870"
+},
+"S069": {
+"video": "7d7ebd46-ae19-4876-905e-0be41438060a",
+"note": "2nd cand of S058"
+},
+"S061": {
+"video": "0f2a168a-8971-444a-9ce6-b1b8a082d1a1"
+},
+"S084": {
+"video": "3097d93c-93da-4ee0-a9f3-b5ce3f1e6a8d",
+"note": "2nd cand of S061"
+},
+"S091": {
+"video": "6871893f-a95c-4e1d-bb10-6fb047b5b7ba"
+},
+"S062": {
+"video": "f6226068-c5fb-4510-a810-2fd151d80a2d",
+"note": "2nd cand of S091 (Wilson hands letter)"
+},
+"S096": {
+"video": "18141644-c3fe-4b62-b26d-d92559f6139a"
+},
+"S097": {
+"video": "5b5cc8a3-75a2-47f1-986c-09616727e5c0",
+"note": "1st cand of S096 gen; voice Christopher Multilingual"
+},
+"S059": {
+"video": "96628024-482e-4903-b8e8-585057f06c7d"
+},
+"S003": {
+"video": "1b2e2b28-3203-4a47-816d-8f25a6a1e73f",
+"verified_image": true,
+"superseded": "155bd687-da52-4541-968d-b8d3b9f4c97e"
+},
+"S004": {
+"video": "a4d09173-cbb8-4882-8e56-3cb40b30c097",
+"verified_image": true,
+"superseded": "ac1f75df-cb4c-43d6-a4a4-3cfd11de0314"
+},
+"S005": {
+"video": "c30428d0-fa63-4df6-af6a-dc10570e97ae"
+},
+"S006": {
+"video": "52649662-62df-4700-beb0-df5e5e9f136a",
+"verified_image": true,
+"superseded": "9316deee-e115-41a4-835d-dbce0e502f4c"
+},
+"S008": {
+"video": "c6b3106d-af7b-4608-8041-eeec1e1e496c",
+"verified_image": true,
+"superseded": "6dcb6098-1b2c-41f9-826d-5f0731e2620b"
+},
+"S009": {
+"video": "7e243446-0b02-4e4c-b507-2df764041ec6",
+"verified_image": true,
+"superseded": "096f0b51-36a4-402f-8ac1-7b9d09eb05b2"
+},
+"S010": {
+"video": "18286824-5a85-44c9-b193-6e88d3e41094",
+"verified_image": true,
+"superseded": "64eb5dbb-eab3-4d54-9746-daf95b48b460"
+},
+"S012": {
+"video": "ccf85787-42e5-439c-bebe-72722ba2eb61",
+"verified_image": true,
+"superseded": "1276a47a-23e8-4699-a261-90219bb273d7"
+},
+"S013": {
+"video": "4fed12b4-d9d3-47ff-877a-d676c955e7c4",
+"verified_image": true,
+"superseded": "ba7883ef-c5dc-4ee1-9efb-00f6da2b23c9"
+},
+"S015": {
+"video": "c1e63392-daa5-4c1c-bf92-2b4c68110b82",
+"verified_image": true,
+"superseded": "cc4922e4-84fe-4d65-9fce-03d48db32ab4"
+},
+"S016": {
+"video": "ca1c3606-6386-4957-8db0-aeae45bf5562",
+"verified_image": true,
+"superseded": "843b13c8-0b70-47f8-ac93-6ee7e48a9d6b"
+},
+"S019": {
+"video": "ba483cb2-ec69-4c12-bf46-b1f1f39726a3",
+"verified_image": true,
+"superseded": "1226df74-d9d6-42e9-82f3-6fead1a6b203"
+},
+"S020": {
+"video": "bc2e9f8c-01f6-4552-a078-18eca15b1561",
+"verified_image": true,
+"superseded": "1db38d6a-d9ca-43ad-a1fe-be317fee19e3"
+},
+"S022": {
+"video": "d627cba4-2281-4abd-b023-b7976d79516d",
+"verified_image": true,
+"superseded": "5f8e5e86-e78e-4b4d-ba59-7890ec174c80"
+},
+"S026": {
+"video": "b875bb2c-9c75-4418-9f25-e5ac9b73b978",
+"verified_image": true,
+"superseded": "554be7ff-2bc1-4da1-ac81-02aae291d4a0"
+},
+"S031": {
+"video": "ad1adeb0-39a7-44c1-be35-7416f9891993"
+},
+"S025": {
+"video": "99de25ef-b094-443f-994f-712c07d43574",
+"verified_image": true,
+"superseded": "1fc877ac-026c-4ddf-8573-8b677573da73"
+},
+"S035": {
+"video": "789ecdae-080f-40f4-a183-2057db25c608",
+"verified_image": true,
+"superseded": "06f3e276-264d-4270-b257-ffb778d01f3b"
+},
+"S036": {
+"video": "d93a4937-9970-4428-8c23-7289a5dea96f",
+"verified_image": true,
+"superseded": "0ebe0344-0ca7-47da-b6b2-96d592c5fada"
+},
+"S038": {
+"video": "9870b516-9ff4-461a-9f80-f76362db7fb0",
+"verified_image": true,
+"superseded": "6fcad3ce-3c67-4564-a3e4-a995205aa4ba"
+},
+"S040": {
+"video": "50f10813-9870-4a06-8afd-c2e7e9f12575",
+"verified_image": true,
+"superseded": "71497b59-25cd-4c88-a7c9-4c4eebc7be75"
+},
+"S043": {
+"video": "6c7d15da-7a65-4869-ae09-854c7165839c",
+"verified_image": true,
+"superseded": "5895e536-f725-4eaf-b727-3fcfa3359657"
+},
+"S044": {
+"video": "51f2cccd-7ab4-412c-aff9-24822d12f43c"
+},
+"S045": {
+"video": "0b0680ba-b88d-404d-a928-ba5100915ecc",
+"verified_image": true,
+"superseded": "d1016439-cf73-463c-b819-defb7e484c01"
+},
+"S046": {
+"video": "09234351-80d3-4ce6-9b5e-9524e31ad9e1",
+"verified_image": true,
+"superseded": "ba628879-2386-49d3-9ffd-eb80ce10de8a"
+},
+"S048": {
+"video": "ff6a63cb-49e0-4026-9834-f75a7f966956",
+"verified_image": true,
+"superseded": "9de941cf-61cc-41dd-978f-77698655d01b"
+},
+"S049": {
+"video": "c38624b3-6e31-4193-981b-1e0eb0be4906",
+"verified_image": true,
+"superseded": "8fb97877-c7b1-4381-ad09-a46ef350acd4"
+},
+"S050": {
+"video": "3b5ca411-ea17-46a7-85f1-46040a34d2bf",
+"verified_image": true,
+"superseded": "7a5c2582-e02f-417a-b17e-808cc704b404"
+},
+"S051": {
+"video": "d326d256-2d2f-4c56-bd7b-0753cfe963fe"
+},
+"S021": {
+"video": "6336b57a-46da-47ab-9eb5-200b08e4b41c",
+"verified_image": true,
+"superseded": "bac67c05-72d8-4848-8b0f-1dc4fb2067d8"
+},
+"S047": {
+"video": "6abde92f-f08e-4fd5-bda3-e3040a3ed74c",
+"verified_image": true,
+"superseded": "ce6bb1a9-92bf-41eb-89a7-f7b5a21735e1"
+},
+"S052": {
+"video": "71e2347c-582c-40e2-ba44-4704609d2099",
+"verified_image": true,
+"superseded": "c7e0e38e-4983-4891-bcf2-ade597a4cbaa"
+},
+"S054": {
+"video": "3aeec2b7-86f2-4ed0-b360-b8edb678ba88",
+"verified_image": true,
+"superseded": "5ee1cfc8-245b-4baf-9b8d-1f40228b8091"
+},
+"S055": {
+"video": "4e11e46c-452d-45c7-9996-3a7d494a2e71",
+"verified_image": true,
+"superseded": "9e5d870f-25d2-43c7-bb56-d07aeb637b46"
+},
+"S057": {
+"video": "12edc3cd-558c-4e0a-b5c1-98e40427437f"
+},
+"S066": {
+"video": "fd7ae4fa-761a-4086-a7f0-411c47811479",
+"verified_image": true,
+"superseded": "9b196dd5-98a9-4685-b17a-b778e2995ae2"
+},
+"S067": {
+"video": "d449c3a2-0df5-4196-a5b1-0f73df0b66d2",
+"verified_image": true,
+"superseded": "744c461f-5171-491a-94d7-f3ff2811532e"
+},
+"S070": {
+"video": "9691140e-f291-43ee-900b-8242f31a7397",
+"verified_image": true,
+"superseded": "62e7642a-a5ed-40ed-8efa-f2120d4ba51e"
+},
+"S071": {
+"video": "5dd2d515-c7af-4567-b463-298fd3871e12",
+"verified_image": true,
+"superseded": "0bb0f5c3-0c53-4b17-9e16-6eae96219fa9"
+},
+"S072": {
+"video": "599b372c-7708-40c5-a6ef-9bec7275ced8",
+"verified_image": true,
+"superseded": "3c30fd40-29c6-4abb-8790-f56576594597"
+},
+"S073": {
+"video": "456554e8-482d-446d-bd30-fb6e13788d8e",
+"verified_image": true,
+"superseded": "618effea-07d8-4fe9-a827-e82a73849459"
+},
+"S074": {
+"video": "9b0e55be-f545-4d3c-8f06-dbf5f9c83f47",
+"verified_image": true,
+"superseded": "4ab1d923-79e4-4fb7-b2d2-d88ff40ac5d5"
+},
+"S075": {
+"video": "d0f84fd7-88d4-4e9f-815d-776a4ae17324",
+"verified_image": true,
+"superseded": "a1309984-b0c2-4b31-b433-63fc373b7762"
+},
+"S076": {
+"video": "4cf531b6-0dc0-4423-8711-0a717420e344"
+},
+"S053": {
+"video": "a09910d2-b713-457f-afe3-95b19be7049a",
+"verified_image": true,
+"superseded": "9d0a823e-95a2-4379-b24b-2f1db0393e42"
+},
+"S056": {
+"video": "54d6e433-c506-407c-80a8-7029509fffa0",
+"verified_image": true,
+"superseded": "1e5cad1a-22a7-43fc-935e-77f41b99c132"
+},
+"S060": {
+"video": "05c1bafd-ab2e-4d30-b61e-93dac2686b51",
+"verified_image": true,
+"superseded": "3ee91c36-dbbf-41e8-bd59-3f80604489b9"
+},
+"S063": {
+"video": "86b47ec2-0563-431c-b39c-383821025ecc",
+"verified_image": true,
+"superseded": "a6497663-c513-440d-a2d9-ff708f7fee89"
+},
+"S064": {
+"video": "8dc29435-e4be-4721-be8d-d2676a8709ef",
+"verified_image": true,
+"superseded": "d6bb06a0-45eb-4d16-9eb6-209672a847ee"
+},
+"S065": {
+"video": "cd89dd84-2f56-4497-b63d-20554888e497",
+"verified_image": true,
+"superseded": "d3da949f-d6f2-44f4-9762-6a2d27ba4521"
+},
+"S068": {
+"video": "576d8c02-4fbb-4f18-a84e-f8ac4f2a9a71",
+"verified_image": true,
+"superseded": "f1196a1c-5473-4409-b33e-8202dedb76ff"
+},
+"S077": {
+"video": "4e3e954f-65ec-4183-97cf-4b4d46eb6080",
+"verified_image": true,
+"superseded": "f1a304d3-cf57-44a5-b1e4-a71842860f6d"
+},
+"S078": {
+"video": "734c98cc-d905-42fc-b0d3-d7ba08dbd3e8",
+"verified_image": true,
+"superseded": "8bf0762a-8cfe-4d35-9758-d38dba7d11cf"
+},
+"S079": {
+"video": "f742cae8-8cf5-4af9-984d-d29419c08f0e",
+"verified_image": true,
+"superseded": "27073d98-94c9-44db-8677-0b89d187553f"
+},
+"S080": {
+"video": "51724210-07cc-43bc-9c96-d66984fb8065",
+"verified_image": true,
+"superseded": "5ea42eb0-5b56-403f-90b8-4868c96a9355"
+},
+"S081": {
+"video": "535b844b-0044-4e74-a84c-5163354ecfce",
+"verified_image": true,
+"superseded": "95b82437-bf65-45a8-bd20-e3a3a9d36e92"
+},
+"S082": {
+"video": "81aaf249-e275-43e7-a8aa-41c4a0a89d26",
+"verified_image": true,
+"superseded": "01f5f0b8-c332-4127-80da-4f0062ddf7ab"
+},
+"S083": {
+"video": "92dbc496-acd3-4d09-8f21-75b55d4890a5"
+},
+"S086": {
+"video": "c90b29dd-75c8-4c8d-acd4-5156db31c891",
+"verified_image": true,
+"superseded": "d67b9906-7ca5-45e2-a568-d180dacd2417"
+},
+"S087": {
+"video": "11894946-1437-43bd-a5ea-b24a38b9eaae",
+"verified_image": true,
+"superseded": "f2fc7e74-0fff-4fd6-b3e4-93ded6e93b90"
+},
+"S088": {
+"video": "86d34db6-d02f-4811-b7fa-1f1739cf043e",
+"verified_image": true,
+"superseded": "b8adaaa4-44ad-4645-b016-61285fde572f"
+},
+"S089": {
+"video": "d20d77d2-1870-41fb-b973-322b47e13823",
+"verified_image": true,
+"superseded": "8d84ac2a-7bb4-4b5e-a1d2-79f0b336223c"
+},
+"S090": {
+"video": "5ab6aa89-4721-4273-b2e2-f4a3d515ca16",
+"verified_image": true,
+"superseded": "8710cbdf-45dd-473e-bf38-de21c4827e01"
+},
+"S092": {
+"video": "4b1c0e00-e9aa-46b0-b61b-e4ec266d341e",
+"verified_image": true,
+"superseded": "9993e821-aecc-4bdd-b657-c403a00d610e"
+},
+"S093": {
+"video": "89da6ffe-d8ab-4877-b021-2b7e93bb7374",
+"verified_image": true,
+"superseded": "2f16c878-9af8-401c-acf7-f7352938f859"
+},
+"S094": {
+"video": "7c07cdc6-f4cc-41c2-892e-80bb4e421996"
+},
+"S095": {
+"video": "948c1457-5c9a-477d-a92c-bef686f42e16",
+"verified_image": true,
+"superseded": "a72fa6bc-c7be-4266-a69f-29a4da76e550"
+},
+"S098": {
+"video": "e8296b31-65ca-4986-90f8-d238f8ff89f6",
+"verified_image": true,
+"superseded": "87ad868c-b782-4fa9-b9bd-5bb3593ccdef"
+},
+"S099": {
+"video": "f6cdebb5-9ba8-43e0-ad38-812ca029df01",
+"verified_image": true,
+"superseded": "f0a86d52-fe9d-4b85-b6b6-62635e9592b2"
+},
+"S100": {
+"video": "a9a10857-574c-4a46-af55-cc8ef0613e69",
+"verified_image": true,
+"superseded": "e3a0438b-5f11-40c2-9bf6-f79a9cf3ecc0"
+},
+"S101": {
+"video": "130618c2-9f4f-4b53-b528-5484d171c221",
+"verified_image": true,
+"superseded": "33c362f4-bf33-4295-b17e-5b5df9f26cc4"
+},
+"S102": {
+"video": "d6434f89-d33d-4604-acac-b9bbdbf07e2e",
+"verified_image": true,
+"superseded": "78ea4238-9bde-4d21-b0c3-8112c57f77c6"
+},
+"S103": {
+"video": "3af3e2ac-42db-4995-b457-ff48b38be486",
+"verified_image": true,
+"superseded": "318dc2d6-df3c-485f-bf11-6b84f965ef46"
+},
+"S105": {
+"video": "44e6b5a4-261d-4106-b530-4b2f6b52d970"
+},
+"S018a": {
+"video": "f35b6ab3-dd70-4d8e-ba07-142a9edc4674",
+"verified_image": true
+},
+"S045a": {
+"video": "ff6bc579-7986-42f5-b94e-9306349b7eda",
+"verified_image": true
+},
+"S055a": {
+"video": "8ca44b2e-f223-4162-a45f-de181b9403f0",
+"verified_image": true
+},
+"S071a": {
+"video": "df62ce1b-acb5-4aa0-9d3d-be485dfd5958",
+"verified_image": true
+},
+"S072a": {
+"video": "d4f69d0b-6bfa-4cc6-8512-9b23a8b55eaf",
+"verified_image": true
+},
+"S082a": {
+"video": "f499f2ca-b7ea-4541-95b4-4aa98cf486a2",
+"verified_image": true
+},
+"S083a": {
+"video": "e8e37271-cb4b-436a-b471-86fa258fe237",
+"verified_image": true
+},
+"S093a": {
+"video": "85a28587-8d55-4e8d-a838-783a45b4d88b",
+"verified_image": true
+},
+"S098a": {
+"video": "8e7d519a-8082-4cb9-ac7c-5d1562804b3e",
+"verified_image": true
+}
+}
