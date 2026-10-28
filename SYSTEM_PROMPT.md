@@ -124,6 +124,14 @@ Route: https://app.videoexpress.ai/ → Create with AI → Create Video From Pro
 - **Toggles.** Creative mode OFF, "Automatically enhance my image prompt" OFF (it can re-check itself, so check it before every Create Image), and public gallery OFF.
 - **Consistent Character.** ON, with references as described in Phase 4. If reference pairs misbehave, as on the Verdun run, repeat the cast description in the prompt instead.
 
+**How the image step really works (learned on the LEGO run).**
+- **Reset.** The Create Video From Prompt dialog resets every time it is reopened: Image Type goes back to Human, enhancement and public gallery go back ON. Open it once, set everything, and keep it open for the whole run. Re-assert the settings before every Create Image.
+- **Image Type.** Pick "Other" for the paper-diorama look.
+- **Generate, then Save.** Create Image returns a preview uuid (shown at the bottom of the dialog). The image is not in My AI Images until you click the floppy-disk Save Image button, which returns a library media ID. Unsaved images are lost when the dialog closes. Record both the uuid and the media ID in the shot row.
+- **Saving acts on the active carousel slide.** Save each image before generating the next, so the active slide is always the one you mean.
+- **Preview.** The saved preview stops rendering in the dialog. To look at an unsaved image, open its preview URL (the `src` of the active slide) in a second tab, or check the saved thumbnails in My AI Images afterwards.
+- **Keep the tab in front.** A background tab throttles timers and saves can time out. Close extra tabs and leave the editor tab fronted.
+
 **Per shot:**
 1. **Prompt.** Enter the image prompt, built from the style-bible prefix, the shot description and the set layout. Check the ratio and enhancement settings, then click Create Image.
 2. **Check.** Give the result one brief suitability check covering the following, then save it:

@@ -43,8 +43,12 @@ for i, (ch, yr, typ, nar, vis, r1, r2) in enumerate(SHOTS, 1):
     m = re.search(r'(?:reading|reads|word|words|year) ([A-Z0-9][A-Z0-9 ,.\-]{1,24})', vis)
     txt = m.group(1).strip() if m and m.group(1).isupper() else ""
     desc = " ".join(DESC[r] for r in (r1, r2) if r)
-    no_people = " No people." if not (r1 or "person" in vis or "paper-doll" in vis or "worker" in vis or "child" in vis
-                                       or "man " in vis or "men " in vis or "figure" in vis or "executive" in vis) else ""
+    PEOPLE_WORDS = ("person", "paper-doll", "worker", "child", "man ", "men ", "figure", "executive", "villager", "neighbour",
+                    "firefighter", "investor", "hobbyist", "employee", "visitor", "crowd", "queue", "couple", "boys", "colleague",
+                    "banker", "lender", "clerk", "shopkeeper", "student", "carpenter", "father", "designer", "shopper", "warrior",
+                    "pirate", "hands", "hand ")
+    no_people = " No people." if not (r1 or any(w in vis for w in PEOPLE_WORDS)) and "no people" not in vis else ""
+    mid = re.sub(r"\s+", " ", f"{desc} {yr}: {vis}.{no_people}").strip()
     img = f"{PREFIX}{PEOPLE} {desc} {yr}: {vis}.{no_people}{FRAMING}"
     img = re.sub(r"\s+", " ", img).strip()
     k = counters[typ]; counters[typ] += 1
@@ -52,7 +56,7 @@ for i, (ch, yr, typ, nar, vis, r1, r2) in enumerate(SHOTS, 1):
     if move == lastmove[0] == lastmove[1]:
         move = MOVES[typ][(k + 1) % 3]
     lastmove = [lastmove[1], move]
-    out.append(dict(id=sid, chapter=ch, year=yr, type=typ, ref1=r1, ref2=r2, image=img, camera=move, narration=nar))
+    out.append(dict(id=sid, chapter=ch, year=yr, type=typ, ref1=r1, ref2=r2, mid=mid, image=img, camera=move, narration=nar))
     rows.append([sid, ch, yr, nar, typ, vis, r2 or r1, txt, move, r1, r2, "", "", "", ""])
     if ch != lastch:
         script.append(f"\n## {ch}\n"); lastch = ch
