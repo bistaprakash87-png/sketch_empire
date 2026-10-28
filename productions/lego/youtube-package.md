@@ -33,6 +33,16 @@ Layered paper-cutout diorama, a small Danish wooden workshop in warm lamplight o
 ## Pinned comment
 Which part of the LEGO story surprised you most: the three fires, the near-collapse, or the comeback? Sources: LEGO.com history pages and 2025 annual results; Wikipedia (The Lego Group; Lego history); History Hit; Mental Floss; History for Operators. Full claim list with confidence levels is in the production fact sheet.
 
+## Generated thumbnail
+https://ai-thumbnails.s3.amazonaws.com/editor/c8d46726-34b8-4611-8d7f-74ee7fe316f9/7e28fd78-bad0-411a-8b34-eebce516ea69.png
+vidIQ self-score 90. Not reviewed by eye in this session; check there is no logo or brand mark before use. Link may expire, so save the file.
+
+## Keyword research (vidIQ, monthly searches)
+history of lego 14,192 (+320%) · lego history 11,806 · lego story 46,113 · lego evolution 8,507 (+86%) · entire history of lego 4,486 · ole kirk christiansen 6,072 · lego film 11,532
+
+## Final video
+VideoExpress My Videos: "LEGO - Carpenter to Global Brand (final subtitled)", 9:03, 1080p, bold yellow/white subtitles.
+
 ## Notes
 - The narration says 2003 deficit was 1.4 billion kroner; other sources give 935 million kroner. See fact sheet F24.
 - Upload only after reviewing the full video.
